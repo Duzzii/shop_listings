@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-new-listing-page',
-  templateUrl: './new-listing-page.component.html',
-  styleUrl: './new-listing-page.component.css'
+  selector: 'app-listing-data-form',
+  templateUrl: './listing-data-form.component.html',
+  styleUrl: './listing-data-form.component.css'
 })
-export class NewListingPageComponent {
-
+export class ListingDataFormComponent {
   name: string = '';
   description: string = '';
   price: string = '';
@@ -23,5 +22,4 @@ export class NewListingPageComponent {
     alert('creating a new listing...')
     this.router.navigateByUrl('/my-listings')
   }
-
 }
